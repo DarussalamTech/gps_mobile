@@ -19,11 +19,11 @@ if (!socket_connect($socket, 'localhost', 8080)) {
 if(!empty($_POST)){
 
 try {
-    if (!$con = mysql_connect("localhost", "root", "admin", "my_db")) {
+    if (!$con = mysql_connect("localhost", "admin", "admin", "gps_db")) {
         echo json_encode(array("error" => mysql_error(), "type" => "mysql error"));
     }
 
-    mysql_select_db('my_db');
+    mysql_select_db('gps_db');
     // Check connection
 
     $sql = "INSERT INTO table1 " .

@@ -9,7 +9,7 @@ $server->infinite_loop(); // Run Server Code Until Process is terminated.
 */
 
 $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
-if (!socket_connect($socket, 'localhost', 8080)) {
+if (!socket_connect($socket, 'localhost', 4444)) {
     die('failed');
 }
 /*
@@ -19,7 +19,7 @@ if (!socket_connect($socket, 'localhost', 8080)) {
 if(!empty($_POST)){
 
 try {
-    if (!$con = mysql_connect("localhost", "root", "admin", "gps_db")) {
+    if (!$con = mysql_connect("localhost", "admin", "admin", "my_db")) {
         echo json_encode(array("error" => mysql_error(), "type" => "mysql error"));
     }
 
