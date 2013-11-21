@@ -7,11 +7,12 @@ $server->hook("CONNECT","handle_connect"); // Run handle_connect every time some
 $server->hook("INPUT","handle_input"); // Run handle_input whenever text is sent to the server
 $server->infinite_loop(); // Run Server Code Until Process is terminated.
 */
-
+/*
 $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
 if (!socket_connect($socket, '54.244.125.63', 8080) || !socket_connect($socket, '54.244.125.63', 80))) {
     die('failed');
 }
+*/
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
