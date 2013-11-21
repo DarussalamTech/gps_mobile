@@ -9,7 +9,7 @@ $server->infinite_loop(); // Run Server Code Until Process is terminated.
 */
 
 $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
-if (!socket_connect($socket, 'localhost', 8080) || !socket_connect($socket, 'localhost', 80))) {
+if (!socket_connect($socket, '54.244.125.63', 8080) || !socket_connect($socket, '54.244.125.63', 80))) {
     die('failed');
 }
 /*
