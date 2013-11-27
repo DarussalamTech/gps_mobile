@@ -17,6 +17,9 @@ if (!socket_connect($socket, '54.244.125.63', 8080) || !socket_connect($socket, 
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
+$_POST['longitude'] = "55";
+$_POST['latitude'] = "44";
+$_POST['device_mac'] = "44554";
 if(!empty($_POST)){
 
 try {
