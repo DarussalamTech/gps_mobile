@@ -1,10 +1,10 @@
-#php_value post_max_size 2M
+php_value post_max_size 2M
 #php_value upload_max_filesize 2M
-#php_value display_errors Off
-#php_value display_startup_errors On
+php_value display_errors Off
+php_value display_startup_errors On
 #php_value log_errors Off
-#php_value max_execution_time 600
-#php_value max_input_time 600
+php_value max_execution_time 600
+php_value max_input_time 600
 #php_value mysql.allow_persistent On
-#php_value default_socket_timeout 240
-#php_value mysql.connect_timeout 240
+php_value default_socket_timeout 240
+php_value mysql.connect_timeout 240
